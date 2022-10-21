@@ -1,0 +1,79 @@
+html,body{
+    margin: 0px;
+    background: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:700px;
+    background-color: grey;
+    background-image: url('https://freepngimg.com/download/crow/3-2-crow-png-picture.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card   {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 12px;
+    border-color: black;
+    background-color: black;
+    min-width: 30%;
+    min-height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align:center;
+  }
+
+.login-form {
+    background-color: rbg(255,255,255, 0.7)
+    padding: 10px;
+    width: 400px;
+}
+
+.flex-input {
+    display:flex;
+    flex-direction:row;
+    margin-bottom:10px;
+    justify-content: center;
+}
+
+input[type="email adress"], [type="password"] {
+    padding: 10px;
+    font-size: 18px;
+}
+
+input[type="button"] {
+    width:40%;
+    font-size:20px;
+    padding:10px;
+    background-color:rgb(136, 8, 8);
+    margin: 10px 0;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    background-color:rgb(220, 20, 60);
+}
+
+div {
+    display:flex;
+    justify-content: center;
+}
+
+@media all and (max-width:480px;) {
+    .flex-input {
+        flex-direction: column;
+    }
+
+    label {
+        flex-basis:0;
+    }
+}
