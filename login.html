@@ -10,16 +10,15 @@
 
 <body class="container">
     <form action="" class="card">
-        <h1>
+        <div id="background">
             <img alt="Death Note" src ='https://i.stack.imgur.com/dd96vm.png' class="center">
-        </h1>
-        
+        </div>
         <div class="flex-input">
-            <input type="email address" placeholder="Email or username">
+            <input required type="email address" placeholder="Email or username">
         </div>
 
         <div class="flex-input">
-            <input type="password" placeholder="Password" autocomplete="new-password">
+            <input required type="password" placeholder="Password" autocomplete="new-password">
         </div>
         
         <div>
@@ -27,7 +26,11 @@
         </div>
 
         <div>
-            <a href="#">Forgot Password</a>
+            <input id="checkbox" type="checkbox" checked><label for="checkbox">Remember me</label>
+        </div>
+
+        <div>
+            <a target="_blank" href="#">Forgot Password</a>
         </div>
 
     </form>
